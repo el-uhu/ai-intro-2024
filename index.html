@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>KI Einführung - September, 2023</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/biotop.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="img/network.jpg">
+					<h2 class="aligned-left">Künstliche Intelligenz</h2>
+					<h3 class="aligned-left em08"> Eine Einführung</h3>
+					<h2 class="aligned-left em03  background">Lukas Hutter | 08.03.2024 | ARS Seminar "KI im HR-Management"</h2>
+				</section>
+
+				<section>
+					<h3>
+						<a href="https://github.com/el-uhu/ai-intro-2024/blob/main/2024_03_Ai_Intro-Handout.pdf">
+							Handouts zu den Slides
+						</a>
+					</h3>
+					<img src="img/qrcode.png" alt="">
+				</section>
+
+				<section data-background-image="img/luki-cut.jpg">
+					<p class="aligned-right bold em08 green1">
+						<a href="mailto:lukas.hutter@biotop.co">Lukas Hutter</a>
+					</p>
+					<p class="aligned-right em05 gray1">
+						Wissenschaftler <br/>
+						Lehrer <br/>
+						Data Analyst, Visualiser & Consultant
+					</p>
+					<p class="aligned-right em05 gray">
+						Gründer von <br/>
+						<a href="http://biotop.co/de">Biotop Wissenschaftskollektiv</a>
+					</p>
+					<p class="aligned-right em05 gray">
+						2012-2016 <br/>
+						Systembiologie | University of Oxford
+					</p>
+					<p class="aligned-right em05 gray">
+						2005-2012 <br/>
+						MSc in Analytischer Chemie | TU Graz</p>
+					</section>
+					
+				<section>
+					<h1>Geschichte</h1>
+				</section>
+
+				<section data-background-image="img/turing.jpg">
+					<h2 class="bold green2 aligned-right">1950</h2>
+					<h3 class="green3 aligned-right">Turing Test</h3>
+					<div class="fragment">
+						<a href="https://www.csee.umbc.edu/courses/471/papers/turing.pdf">
+							<img data-src="img/turing-essay.jpg">
+						</a>
+					</div>
+				</section>
+
+				<section data-background-image="img/minsky.jpg">
+					<h2 class="bold green2 aligned-left">1951</h2>
+					<h3 class="green3 aligned-left">SNARC</h3>
+					<a href="https://www.the-scientist.com/foundations/machine--learning--1951-65792">
+						<p class="background">
+							<b>Marvin Minsky</b> baut das erste, damals noch analoge, neuronale Netzwerk, in dem virtuelle Ratten durch ein Labyrinth navigieren
+						</p>
+					</a>
+				</section>
+
+				<section data-background-image="img/dartmouth.jpg">
+					<h2 class="bold green3 aligned-left">1956</h2>
+					<h3 class="green3 aligned-left">Dartmouth Conference</h3>
+					<div class="fragment">
+						<a href="https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1904">
+							<img data-src="img/dartmouth2.png">
+						</a>
+					</div>
+				</section>
+
+				<section>
+					<img class="r-stretch" src="img/ai-history.png">
+				</section>
+
+				<section>
+					<h1>Grundbegriffe</h1>
+				</section>
+
+				<section>
+					<h2 class="bold green2 aligned-left">Modell</h2>
+					<h3 class="green3 aligned-left">die trainierte Version eines Lernalgorithmus </h3>
+				</section>
+
+				<section data-background-image="img/matrjushka.jpg">
+					<img data-src="img/ai-ml-dl.png">
+				</section>
+
+				<section data-background-image="img/network.jpg">
+					<p class="aligned-left background">
+						<a><b>Künstliche Intelligenz</b></a> (<b>K.I.</b> oft auch <b>A.I.</b>) ist jenes Teilgebiet der Computerwissenschaften, welches sich kognitiven Aufgabenstellungen - wie beispielsweise dem Lernen, dem Lösen genereller und spezifischer Probleme, und dem Erkennen von Mustern - widmet, deren Lösung normalerweise menschliche Intelligenz velangt.
+					</p>
+				</section>
+
+				<section>
+					<h2>Typen künstlicher Intelligenz</h2>
+					<div class="fragment">
+						<h3 class="green3">Narrow/ Weak AI</h3>
+						<p>spezifische Probleme: Voice Assistants, Bilderkennung, Empfehlungssysteme</p>
+					</div>
+					<div class="fragment">
+						<h3 class="green3">General AI / Strong AI</h3>
+						<p>Verstehen, Lernen, Wissen kontextunabhängig Einsetzen</p>
+					</div>
+					
+				</section>
+
+				<section>
+					<h2>Machine Learning</h2>
+					<img data-src="img/xkcd.png">
+				</section>
+
+				<section>
+					<h3>Lernansätze im ML</h3>
+					<img data-src="img/ml-cat.png" height="400">
+					<small>Source: <a href="https://www.mathworks.com/discovery/reinforcement-learning.html">MathWorks</a></small>
+				</section>
+
+				<section>
+					<h3>Support Vector Machines (SVMs)</h3>
+					<img data-src="img/svm.png">
+					<small>Source: <a href="https://www.hashpi.com/the-intuition-behind-kernel-methods">The Hash Pi</a></small>
+				</section>
+
+				<section>
+					<h3>Entscheidungsbäume & Random Forests</h3>
+					<img data-src="img/solar_panels.png">
+				</section>
+
+				<section data-background="#fff">
+					<img data-src="img/iris.svg">
+				</section>
+
+				<section data-background="#000">
+					<h2 class="aligned-left aligned-top green3"> Deep Learning</h2>
+					<h2 class="aligned-left em03 grey">Animation: <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi">3Blue1Brown</a></h2>
+					<img data-src="img/neural-net.gif" alt="">
+				</section>
+
+				<section data-background="#000">
+					<h4 class="aligned-left aligned-top"> Backpropagation</h4>
+					<h2 class="aligned-left em03 grey">Animation: <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi">3Blue1Brown</a></h2>
+					<img data-src="img/backpropagation.gif" alt="">
+				</section>
+
+				<section>
+					<h4 class="aligned-left aligned-top"> Convolutional Neural Networks</h4>
+					<h2 class="aligned-left em03 grey">Animation: <a href="https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif">Wikipedia</a></h2>
+					<img data-src="img/convolution.gif" alt="">
+				</section>
+
+				<section>
+					<h4 class="aligned-left aligned-top"> Convolutional Neural Networks</h4>
+					<img data-src="img/conv2.png" alt="">
+					<small>Source: <a href="https://www.researchgate.net/publication/341576780_Object_Detection_and_Image_Segmentation_with_Deep_Learning_on_Earth_Observation_Data_A_Review-Part_I_Evolution_and_Recent_Trends">Hoeser & Kuenzer 2020 Remote Sensing</a></small>
+				</section>
+
+				<section>
+					<h4 class="aligned-left aligned-top"> Recurrent Neural Networks</h4>
+					<img data-src="img/rnn.png" alt="" height="500">
+					<small>Source: <a href="https://towardsdatascience.com/introducing-recurrent-neural-networks-f359653d7020">Towards Data Science</a></small>
+				</section>
+
+				<section>
+					<h1>Generative AI</h1>
+				</section>
+
+				<section>
+					<img data-src="img/dai.png" alt="" >
+					<small>Source: <a href="https://vitalflux.com/generative-vs-discriminative-models-examples/">vitalflux.com</a></small>
+				</section>
+
+				<section>
+					<img data-src="img/gai.png" alt="" >
+					<small>Source: <a href="https://vitalflux.com/generative-vs-discriminative-models-examples/">vitalflux.com</a></small>
+				</section>
+
+				<section>
+					<h3 class="aligned-left" >Generative Adversarial Networks</h3>
+					<h2 class="aligned-left em03 grey"><a href="https://arxiv.org/abs/1406.2661">Goodfellow et al. 2014 </a></h2>
+					<img data-src="img/gan.png" alt="">
+					<small>Source: <a href="https://sthalles.github.io/intro-to-gans/">Thalles' blog</a></small>
+				</section>
+
+
+				<section>
+					<h3 class="aligned-left">Generative Adversarial Networks</h3>
+					<h2 class="aligned-left em03 grey"><a href="https://arxiv.org/abs/1406.2661">Goodfellow et al. 2014 </a></h2>
+					<img data-src="img/gan2.gif" alt="" >
+				</section>
+
+				<section>
+					<h3>Large Language Models</h3>
+					<p>Generative AI Systeme, die Sprache als Input (<i>Prompt</i>) und/oder Output verwenden</p>
+					<small>GPT, LamDA, DALL-E, Midjourney</small>
+				</section>
+
+				<section>
+					<h3>Wie geht AI mit Sprache um?</h3>
+				</section>
+
+				<section>
+					<h3>Embedding</h3>
+					<img data-src="img/emb.png" alt="" height="500px">
+				</section>
+
+
+				<section>
+					<h3 class="aligned-left">Transformer Architektur</h3>
+					<h2 class="aligned-left em03 grey"><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. 2017 </a></h2>
+					<img data-src="img/transformer.png" alt="" height="500px">
+				</section>
+
+				<section>
+					<h3 class="aligned-left">Attention System</h3>
+					<h2 class="aligned-left em03 grey"><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. 2017 </a></h2>
+					<img data-src="img/attention.gif" alt="">
+				</section>
+
+				<section>
+					<h3>Generative Pre-trained Transformer (GPT)</h3>
+					<ul>
+						<li>basiert auf modifizierter Transformer Architektur und riesigen Trainingsdatenmengen</li>
+						<li>Mehrstufiger Lernprozess: Self-Supervised & Supervised</li>
+						<li>GPT-4 (2023)
+							<ul>
+								<li>
+									etwa 1 Billion Parameter (10x vs GPT-3)
+								</li>
+								
+								<li>
+									Embedding: mehr als 12000 Dimensionen
+							  	</li>
+								<li>
+									kann 25000 Wörter auf einmal verarbeiten (8x vs GPT-3)
+								</li>
+								<li>
+									mutlimodal: "versteht" Text und Bilder
+								</li>
+								<li>
+									kann sich an 64000 Wörter in einer Konversation erinnern (8x vs
+									GPT-3.5)
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section data-background-image="img/network.jpg">
+					<h2 class="aligned-left">Fragen</h2>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
